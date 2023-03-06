@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Import Cars</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="menu">
+                <nav class="nav nva-menu">
+                    <a href="#" class="nav__item">Главная</a>
+                    <a href="#" class="nav__item">Как оформить заказ</a>
+                    <a href="#" class="nav__item">Мои заказы</a>
+                    <a href="#" class="nav__item">Корзина</a>
+                    <a href="#" class="nav__item">VIN-запрос</a>
+                    <a href="#" class="nav__item">Обмен и возврат</a>
+                    <a href="#" class="nav__item">Контакты</a>
+                    <a href="#" class="nav__item">Новости</a>
+                    <a href="#" class="nav__item">Autodealer</a>
+                </nav>
+                <div class="headAuth nav__item">
+                    <a href="" class="headAuth loginLink">Вход</a>
+                    /
+                    <a href="" class="headAuth logRegLink">Регистрация</a>
+                    <div style="display: none;" class="wVisualFormLogin">
+                        <div class="modalWindow">
+                            <div class="modalWindowHeading">Авторизация</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </header>
+    <section class="siteSection">
+        <div class="navbar">
+            <div class="navbar-top">
+                <a href="./img/logo.svg" class="logo">
+                    <img src="img/logo1.svg" alt="Logo: Encar" class="logo__image">
+                </a>
+                <div class="navbar-search">
+                    <div class="navbar-info">
+                        <div class="navbar-info__item">+7(999)999-99-99</div>
+                        <div class="navbar-info__email">info@info.info</div>
+                    </div>
+                    <div class="navbar-searchCart">
+                        <div class="navbar-searchCart__form">
+                            <form action="/search/" class="search">
+                                <input type="text" class="search__input"
+                                    placeholder="Введите код запчасти или VIN номер автомобиля">
+                                <!-- <button class="search__button">
+                                        <img src="img/search_icon 1.svg" alt="">
+                                    </button> -->
+                            </form>
+                        </div>
+                        <div class="navbar-searchCart__cart">
+                            <a href="#" class="cart">
+                                <span class="qty">0</span>
+                                <div class="navbar-searchCart__cart--text">
+                                    <div class="navbar-searchCart__cart--textTitle">Корзина</div>
+                                    на сумму:
+                                    <span class="navbar-searchCart__cart--summContainer">
+                                        <span class="text-nowrap">
+                                            <span class="moneySumm">0</span>
+                                            <i class="icon-ruble"></i>
+                                        </span>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-bottom">
+                <nav class="nav navbar-bottom__menu">
+                    <a href="#" class="nav__item">Шины</a>
+                    <a href="#" class="nav__item">Диски</a>
+                    <a href="#" class="nav__item">Масла</a>
+                    <a href="#" class="nav__item">Лампы</a>
+                    <a href="#" class="nav__item">Аккумуляторы</a>
+                    <a href="#" class="nav__item">Запчасти для ТО</a>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <section class="catalog">
+        <div class="container">
+            <div class="fastSearch">
+                <span class="fastSearch-text">Бытрый подбор:</span>
+                <a href="#">185/65R15</a>
+                <a href="#">185/65R15</a>
+                <a href="#">185/65R15</a>
+                <a href="#">185/65R15</a>
+                <a href="#">185/65R15</a>
+                <a href="#">185/65R15</a>
+                <a href="#">185/65R15</a>
+                <a href="#">185/65R15</a>
+                <a href="#">185/65R15</a>
+            </div>
+            <div class="catalog-tab">
+                <button class="button__catalogTub">
+                    <a href="" class="catalog-item">Поиск шин</a>
+                </button>
+                <button class="button__catalogTub">
+                    <a href="" class="catalog-item">Поиск дисков</a>
+                </button>
+                <button class="button__catalogTub">
+                    <a href="" class="catalog-item">Поиск по авто / Шинный калькулятор</a>
+                </button>
+            </div>
+            <div class="catalogGroupColumns">
+                <div class="catalogGroupColumns-filter">
+                    <p>Бренды</p>
+                    <div class="catalogGroupColumns-filter__brandSwicher">
+                        <button class="button__catalogTub">
+                            <a href="" class="catalog-item">Популярные</a>
+                        </button>
+                        |
+                        <button class="button__catalogTub">
+                            <a href="" class="catalog-item">Все</a>
+                        </button>
+                    </div>
+                    <div class="catalogGroupColumns-filter__brand">
+                        <div class="catalogGroupColumns-filter__brand--checkbox">
+                            <p><input type="checkbox">Continental</p>
+                            <p><input type="checkbox">Michelin</p>
+                        </div>
+                        <div class="catalogGroupColumns-filter__brand--checkbox">
+                            <p><input type="checkbox">KUMHO</p>
+                            <p><input type="checkbox">Yokohama</p>
+                        </div>
+                        <div class="catalogGroupColumns-filter__brand--checkbox">
+                            <p><input type="checkbox">TOYO</p>
+                            <p><input type="checkbox">Pirelli</p>
+                        </div>
+                        <div class="catalogGroupColumns-filter__brand--checkbox">
+                            <p><input type="checkbox">HANKOOK</p>
+                            <p><input type="checkbox">Bridgestoune</p>
+                        </div>
+                    </div>
+                    <div class="catalogGroupColumns-filter-block">
+                        <p>Сезонность</p>
+                        <div class="catalogGroupColumns-filter__brandSwicher">
+                            <button class="button__catalogTub">
+                                <a href="" class="catalog-item">Популярные</a>
+                            </button>
+                            |
+                            <button class="button__catalogTub">
+                                <a href="" class="catalog-item">Все</a>
+                            </button>
+                        </div>
+                        <div class="catalogGroupColumns-filter__brand--checkbox">
+                            <p><input type="checkbox">летняя</p>
+                            <p><input type="checkbox">зимняя</p>
+                        </div>
+
+                    </div>
+                    <div class="catalogGroupColumns-filter-block">
+                        <p>Ширина, мм</p>
+                        <div class="catalogGroupColumns-filter__brandSwicher">
+                            <button class="button__catalogTub">
+                                <a href="" class="catalog-item">Популярные</a>
+                            </button>
+                            |
+                            <button class="button__catalogTub">
+                                <a href="" class="catalog-item">Все</a>
+                            </button>
+                        </div>
+                        <div class="catalogGroupColumns-filter__brand--checkbox">
+                            <p><input type="checkbox">175</p>
+                            <p><input type="checkbox">185</p>
+                        </div>
+                        <div class="catalogGroupColumns-filter__brand--checkbox">
+                            <p><input type="checkbox">195</p>
+                            <p><input type="checkbox">205</p>
+                        </div>
+                        <div class="catalogGroupColumns-filter__brand--checkbox">
+                            <p><input type="checkbox">215</p>
+                            <p><input type="checkbox">225</p>
+                        </div>
+                    </div>
+                    <div class="catalogGroupColumns-filter-block">
+                        <p>Высота профился, %</p>
+                        <div class="catalogGroupColumns-filter__brandSwicher">
+                            <button class="button__catalogTub">
+                                <a href="" class="catalog-item">Популярные</a>
+                            </button>
+                            |
+                            <button class="button__catalogTub">
+                                <a href="" class="catalog-item">Все</a>
+                            </button>
+                        </div>
+                        <div class="catalogGroupColumns-filter__brand--checkbox">
+                            <p><input type="checkbox">55</p>
+                            <p><input type="checkbox">60</p>
+                        </div>
+                        <div class="catalogGroupColumns-filter__brand--checkbox">
+                            <p><input type="checkbox">65</p>
+                            <p><input type="checkbox">70</p>
+                        </div>
+
+                    </div>
+                    <div class="catalogGroupColumns-filter-block">
+                        <p>Диаметр, дюймы</p>
+                        <div class="catalogGroupColumns-filter__brandSwicher">
+                            <button class="button__catalogTub">
+                                <a href="" class="catalog-item">Популярные</a>
+                            </button>
+                            |
+                            <button class="button__catalogTub">
+                                <a href="" class="catalog-item">Все</a>
+                            </button>
+                        </div>
+                        <div class="catalogGroupColumns-filter__brand--checkbox">
+                            <p><input type="checkbox">13</p>
+                            <p><input type="checkbox">14</p>
+                        </div>
+                        <div class="catalogGroupColumns-filter__brand--checkbox">
+                            <p><input type="checkbox">15</p>
+                            <p><input type="checkbox">16</p>
+                        </div>
+                        <div class="catalogGroupColumns-filter__brand--checkbox">
+                            <p><input type="checkbox">17</p>
+                            <p><input type="checkbox">18</p>
+                        </div>
+                    </div>
+                    <div class="catalogGroupColumns-filter-block">
+                        <p>Тип шины</p>
+                        <div class="catalogGroupColumns-filter__brand--checkbox">
+                            <p><input type="checkbox">SUV</p>
+                            <p><input type="checkbox">комерческая</p>
+                            <p><input type="checkbox">легковая</p>
+                        </div>
+
+                    </div>
+                    <div class="catalogGroupColumns-filter-buttons">
+                        <button class="button__filterButton">
+                            <a href="" class="catalog-item">Показать</a>
+                        </button>
+
+                        <button class="button__filterButton">
+                            <a href="" class="catalog-item">Расширенный поиск</a>
+                        </button>
+                    </div>
+
+                </div>
+                <div class="catalogGroupColumns-resalt">
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>
